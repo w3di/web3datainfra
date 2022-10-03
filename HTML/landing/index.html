@@ -1,7 +1,5 @@
-
 <!DOCTYPE html>
     <html lang="en">
-
     <head>
         <meta charset="utf-8" />
         <title>W3DI - Web3 Data Infra</title>
@@ -16,15 +14,15 @@
         <link rel="shortcut icon" href="images/favicon.ico">
         <!-- Bootstrap -->
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-        <!-- tobii css -->
-        <link href="css/tobii.min.css" rel="stylesheet" type="text/css" />
         <!-- Icons -->
         <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+        <!-- Slider -->               
+        <link rel="stylesheet" href="css/tiny-slider.css"/> 
+        <link rel="stylesheet" href="css/tobii.min.css"/> 
         <!-- Main Css -->
         <link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
         <link href="css/colors/default.css" rel="stylesheet" id="color-opt">
-
     </head>
 
     <body>
@@ -44,11 +42,12 @@
             <div class="container">
                 <!-- Logo container-->
                 <a class="logo" href="index.html">
-                    <img src="images/W3DI.png" height="84" class="logo-light-mode" alt="">
+                    <span class="logo-light-mode">
+                        <img src="images/W3DI.png" class="l-dark" height="84" alt="">
+                        <img src="images/W3DI.png" class="l-light" height="84" alt="">
+                    </span>
                     <img src="images/W3DI.png" height="84" class="logo-dark-mode" alt="">
                 </a>
-                
-                <!-- Logo End -->
 
                 <!-- End Logo container-->
                 <div class="menu-extras">
@@ -69,13 +68,15 @@
                 <ul class="buy-button list-inline mb-0">
                     <li class="list-inline-item mb-0">
                         <a href="javascript:void(0)" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                            <div class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="settings" class="fea icon-sm"></i></div>
+                            <div class="login-btn-primary"><span class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="settings" class="fea icon-sm"></i></span></div>
+                            <div class="login-btn-light"><span class="btn btn-icon btn-pills btn-light"><i data-feather="settings" class="fea icon-sm"></i></span></div>
                         </a>
                     </li>
                     
                     <li class="list-inline-item ps-1 mb-0">
                         <a href="https://1.envato.market/landrick" target="_blank">
-                            <div class="btn btn-icon btn-pills btn-primary"><i data-feather="shopping-cart" class="fea icon-sm"></i></div>
+                            <div class="login-btn-primary"><span class="btn btn-icon btn-pills btn-primary"><i data-feather="shopping-cart" class="fea icon-sm"></i></span></div>
+                            <div class="login-btn-light"><span class="btn btn-icon btn-pills btn-light"><i data-feather="shopping-cart" class="fea icon-sm"></i></span></div>
                         </a>
                     </li>
                 </ul>
@@ -83,94 +84,63 @@
         
                 <div id="navigation">
                     <!-- Navigation Menu-->   
-                    <ul class="navigation-menu">
-                        <li><a href="index-portfolio.html" class="sub-menu-item">Home</a></li>
-                        
-                        <li class="has-submenu parent-parent-menu-item">
-                            <a href="javascript:void(0)">Portfolio</a><span class="menu-arrow"></span>
-                            <ul class="submenu megamenu">
-                                <li>
-                                    <ul>
-                                        <li class="megamenu-head">Modern Portfolio</li>
-                                        <li><a href="portfolio-modern-two.html" class="sub-menu-item">Two Column</a></li>
-                                        <li><a href="portfolio-modern-three.html" class="sub-menu-item">Three Column</a></li>
-                                        <li><a href="portfolio-modern-four.html" class="sub-menu-item">Four Column</a></li>
-                                        <li><a href="portfolio-modern-five.html" class="sub-menu-item">Five Column</a></li>
-                                        <li><a href="portfolio-modern-six.html" class="sub-menu-item">Six Column</a></li>
-                                    </ul>
-                                </li>
+                    <ul class="navigation-menu nav-light">
+                        <li><a href="index-hosting.html" class="sub-menu-item">Home</a></li>
 
-                                <li>
-                                    <ul>
-                                        <li class="megamenu-head">Classic Portfolio</li>
-                                        <li><a href="portfolio-classic-two.html" class="sub-menu-item">Two Column</a></li>
-                                        <li><a href="portfolio-classic-three.html" class="sub-menu-item">Three Column</a></li>
-                                        <li><a href="portfolio-classic-four.html" class="sub-menu-item">Four Column</a></li>
-                                        <li><a href="portfolio-classic-five.html" class="sub-menu-item">Five Column</a></li>
-                                        <li><a href="portfolio-classic-six.html" class="sub-menu-item">Six Column</a></li>
-                                    </ul>
-                                </li>
+                        <li><a href="hosting-domain.html" class="sub-menu-item">Domain</a></li>
 
-                                <li>
-                                    <ul>
-                                        <li class="megamenu-head">Grid Portfolio</li>
-                                        <li><a href="portfolio-grid-two.html" class="sub-menu-item">Two Column</a></li>
-                                        <li><a href="portfolio-grid-three.html" class="sub-menu-item">Three Column</a></li>
-                                        <li><a href="portfolio-grid-four.html" class="sub-menu-item">Four Column</a></li>
-                                        <li><a href="portfolio-grid-five.html" class="sub-menu-item">Five Column</a></li>
-                                        <li><a href="portfolio-grid-six.html" class="sub-menu-item">Six Column</a></li>
-                                    </ul>
-                                </li>
-                                
-                                <li>
-                                    <ul>
-                                        <li class="megamenu-head">Masonry Portfolio</li>
-                                        <li><a href="portfolio-masonry-two.html" class="sub-menu-item">Two Column</a></li>
-                                        <li><a href="portfolio-masonry-three.html" class="sub-menu-item">Three Column</a></li>
-                                        <li><a href="portfolio-masonry-four.html" class="sub-menu-item">Four Column</a></li>
-                                        <li><a href="portfolio-masonry-five.html" class="sub-menu-item">Five Column</a></li>
-                                        <li><a href="portfolio-masonry-six.html" class="sub-menu-item">Six Column</a></li>
-                                    </ul>
-                                </li>
-                                
-                                <li>
-                                    <ul>
-                                        <li class="megamenu-head">Portfolio Detail</li>
-                                        <li><a href="portfolio-detail-one.html" class="sub-menu-item">Portfolio One</a></li>
-                                        <li><a href="portfolio-detail-two.html" class="sub-menu-item">Portfolio Two</a></li>
-                                        <li><a href="portfolio-detail-three.html" class="sub-menu-item">Portfolio Three</a></li>
-                                        <li><a href="portfolio-detail-four.html" class="sub-menu-item">Portfolio Four</a></li>
-                                    </ul>
-                                </li>
+                        <li class="has-submenu parent-menu-item">
+                            <a href="javascript:void(0)">Hosting</a><span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a href="hosting-shared.html" class="sub-menu-item">Shared Hosting</a></li>
+                                <li><a href="hosting-vps.html" class="sub-menu-item">VPS Hosting</a></li>
+                                <li><a href="hosting-dedicated.html" class="sub-menu-item">Dedicated Hosting</a></li>
+                                <li><a href="hosting-cloud.html" class="sub-menu-item">Cloud Hosting</a></li>
+                                <li><a href="hosting-reseller.html" class="sub-menu-item">Reseller Hosting</a></li>
                             </ul>
                         </li>
 
-                        <li><a href="portfolio-about.html" class="sub-menu-item">About us</a></li>
-                        
-                        <li><a href="portfolio-service.html" class="sub-menu-item">Services</a></li>
+                        <li class="has-submenu parent-parent-menu-item">
+                            <a href="javascript:void(0)">Pages</a><span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a href="hosting-aboutus.html" class="sub-menu-item"> About Us</a></li>
+                                <li><a href="hosting-services.html" class="sub-menu-item"> Services</a></li>
+                                <li><a href="hosting-faqs.html" class="sub-menu-item"> FAQs</a></li>
+                                <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> Blog </a><span class="submenu-arrow"></span>
+                                    <ul class="submenu">
+                                        <li><a href="hosting-blog.html" class="sub-menu-item"> Blogs </a></li>
+                                        <li><a href="hosting-blog-detail.html" class="sub-menu-item">Blog Details</a></li>
+                                    </ul> 
+                                </li>
+                                <li class="has-submenu parent-menu-item"><a href="javascript:void(0)"> Auth pages </a><span class="submenu-arrow"></span>
+                                    <ul class="submenu">
+                                        <li><a href="auth-cover-login.html" class="sub-menu-item">Login</a></li>
+                                        <li><a href="auth-cover-signup.html" class="sub-menu-item">Signup</a></li>
+                                        <li><a href="auth-cover-re-password.html" class="sub-menu-item">Reset Password</a></li>
+                                    </ul> 
+                                </li>
+                            </ul>
+                        </li>
                     </ul><!--end navigation menu-->
                 </div><!--end navigation-->
             </div><!--end container-->
         </header><!--end header-->
         <!-- Navbar End -->
         
-        <!-- Hero Start -->
-        <section class="bg-half-260 d-table w-100" style="background: url('images/web3datainfra.jpeg') center center;">
-            <!--div class="bg-overlay bg-overlay-white"></div-->
+        <!-- Start -->
+        <!--section class="bg-half-170 d-table bg-primary w-100" style="background-image: url('images/web3datainfra.jpeg');"-->
+        <section class="bg-half-170 d-table bg-primary w-100" >
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-12">
-                        <div class="title-heading text-center mt-5 pt-4">
-                            <h1 class="display-1 text-white fw-bold mb-3">Web3 Data Infra</h1>
-                            <p class="para-desc mx-auto h6">Launch your campaign and benefit from our expertise on designing and managing conversion centered bootstrap v5 html page.</p>
+                <div class="row mt-5 justify-content-center">
+                    <div class="col">
+                        <div class="pages-heading title-heading text-center">
+                            <h4 class="display-6 text-white title-dark mb-4 fw-bold">Web3 Data Infra Club</h4>
+                            <p class="text-white-50 para-desc mx-auto mb-0">Launch your campaign and benefit from our expertise on designing and managing conversion centered bootstrap v5 html page.</p>
                         </div>
                     </div><!--end col-->
                 </div><!--end row-->
-            </div><!--end container--> 
+            </div> <!--end container-->
         </section><!--end section-->
-        <!-- Hero End -->    
-
-        <!-- Shape Start -->
         <div class="position-relative">
             <div class="shape overflow-hidden text-white">
                 <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -178,145 +148,176 @@
                 </svg>
             </div>
         </div>
-        <!--Shape End-->
+        <!-- Hero End -->
 
+        <!-- FEATURES START -->
         <section class="section">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-12 text-center">
-                        <div class="section-title mb-4 pb-2">
-                            <h4 class="title mb-4">Build for Developer</h4>
-                            <p class="text-muted para-desc mb-0 mx-auto">Start working with <span class="text-primary fw-bold">Landrick</span> that can provide everything you need to generate awareness, drive traffic, connect.</p>
+                    <div class="col-lg-12">
+                        <div class="features-absolute">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6 col-12">
+                                    <div class="card features feature-primary feature-clean explore-feature p-4 px-md-3 border-0 rounded-md shadow text-center">
+                                        <div class="icons text-center mx-auto">
+                                            <i class="uil uil-airplay d-block rounded h3 mb-0"></i>
+                                        </div>
+
+                                        <div class="card-body p-0 content">
+                                            <h5 class="mt-4"><a href="javascript:void(0)" class="title text-dark">Data WareHouse</a></h5>
+                                            <p class="text-muted">The most well-known which is said to have originated</p>
+
+                                            <a href="javascript:void(0)" class="read-more">Read More <i class="uil uil-angle-right-b align-middle"></i></a>
+                                        </div>
+                                    </div>
+                                </div><!--end col-->
+
+                                <div class="col-lg-3 col-md-6 col-12 mt-4 mt-md-0 pt-2 pt-md-0">
+                                    <div class="card features feature-primary feature-clean explore-feature p-4 px-md-3 border-0 rounded-md shadow text-center">
+                                        <div class="icons text-center mx-auto">
+                                            <i class="uil uil-clipboard-alt d-block rounded h3 mb-0"></i>
+                                        </div>
+
+                                        <div class="card-body p-0 content">
+                                            <h5 class="mt-4"><a href="javascript:void(0)" class="title text-dark">Data Lake</a></h5>
+                                            <p class="text-muted">The most well-known which is said to have originated</p>
+
+                                            <a href="javascript:void(0)" class="read-more">Read More <i class="uil uil-angle-right-b align-middle"></i></a>
+                                        </div>
+                                    </div>
+                                </div><!--end col-->
+
+                                <div class="col-lg-3 col-md-6 col-12 mt-4 mt-lg-0 pt-2 pt-lg-0">
+                                    <div class="card features feature-primary feature-clean explore-feature p-4 px-md-3 border-0 rounded-md shadow text-center">
+                                        <div class="icons text-center mx-auto">
+                                            <i class="uil uil-credit-card-search d-block rounded h3 mb-0"></i>
+                                        </div>
+
+                                        <div class="card-body p-0 content">
+                                            <h5 class="mt-4"><a href="javascript:void(0)" class="title text-dark">Data LakeHouse</a></h5>
+                                            <p class="text-muted">The most well-known which is said to have originated</p>
+
+                                            <a href="javascript:void(0)" class="read-more">Read More <i class="uil uil-angle-right-b align-middle"></i></a>
+                                        </div>
+                                    </div>
+                                </div><!--end col-->
+
+                                <div class="col-lg-3 col-md-6 col-12 mt-4 mt-lg-0 pt-2 pt-lg-0">
+                                    <div class="card features feature-primary feature-clean explore-feature p-4 px-md-3 border-0 rounded-md shadow text-center">
+                                        <div class="icons text-center mx-auto">
+                                            <i class="uil uil-ruler-combined d-block rounded h3 mb-0"></i>
+                                        </div>
+
+                                        <div class="card-body p-0 content">
+                                            <h5 class="mt-4"><a href="javascript:void(0)" class="title text-dark">Data Mesh</a></h5>
+                                            <p class="text-muted">The most well-known which is said to have originated</p>
+
+                                            <a href="javascript:void(0)" class="read-more">Read More <i class="uil uil-angle-right-b align-middle"></i></a>
+                                        </div>
+                                    </div>
+                                </div><!--end col-->
+                            </div>
                         </div>
-                    </div><!--end col-->
+                    </div>
                 </div><!--end row-->
+            </div><!--end container-->
 
-                <div class="row">
-                    <div class="col-lg-3 col-md-4 mt-4 pt-2">
-                        <div class="card features feature-primary feature-full-bg rounded p-4 bg-light text-center position-relative overflow-hidden border-0">
-                            <span class="h1 icon-color">
-                                <i class="uil uil-shield-check"></i>
-                            </span>
-                            <div class="card-body p-0 content">
-                                <h5>Secure Payment</h5>
-                                <p class="para text-muted mb-0">It is a long established fact that a reader.</p>
-                            </div>
-                            <span class="big-icon text-center">
-                                <i class="uil uil-shield-check"></i>
-                            </span>
-                        </div>
+            <div class="container mt-100 mt-60">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <img src="images/infra/pandoinweb3.png" class="img-fluid" alt="">
                     </div><!--end col-->
 
-                    <div class="col-lg-3 col-md-4 mt-4 pt-2">
-                        <div class="card features feature-primary feature-full-bg rounded p-4 bg-light text-center position-relative overflow-hidden border-0">
-                            <span class="h1 icon-color">
-                                <i class="uil uil-thumbs-up"></i>
-                            </span>
-                            <div class="card-body p-0 content">
-                                <h5>Easy Book</h5>
-                                <p class="para text-muted mb-0">It is a long established fact that a reader.</p>
-                            </div>
-                            <span class="big-icon text-center">
-                                <i class="uil uil-thumbs-up"></i>
-                            </span>
+                    <div class="col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <div class="section-title ms-lg-5">
+                            <h4 class="title mb-4">Web3 Data Infra <br> Reference Architecture</h4>
+                            <p class="text-muted">You can combine all the Landrick templates into a single one, you can take a component from the Application theme and use it in the Website.</p>
+                            <ul class="list-unstyled text-muted">
+                                <li class="mb-1"><span class="text-primary h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>Digital Marketing Solutions for Tomorrow</li>
+                                <li class="mb-1"><span class="text-primary h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>Our Talented & Experienced Marketing Agency</li>
+                                <li class="mb-1"><span class="text-primary h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>Create your own skin to match your brand</li>
+                            </ul>
+                            <a href="javascript:void(0)" class="mt-3 h6 text-primary">Find Out More <i class="uil uil-angle-right-b"></i></a>
                         </div>
-                    </div><!--end col-->
-
-                    <div class="col-lg-3 col-md-4 mt-4 pt-2">
-                        <div class="card features feature-primary feature-full-bg rounded p-4 bg-light text-center position-relative overflow-hidden border-0">
-                            <span class="h1 icon-color">
-                                <i class="uil uil-keyboard-show"></i>
-                            </span>
-                            <div class="card-body p-0 content">
-                                <h5>Free Amenities</h5>
-                                <p class="para text-muted mb-0">It is a long established fact that a reader.</p>
-                            </div>
-                            <span class="big-icon text-center">
-                                <i class="uil uil-keyboard-show"></i>
-                            </span>
-                        </div>
-                    </div><!--end col-->
-
-                    <div class="col-lg-3 col-md-4 mt-4 pt-2">
-                        <div class="card features feature-primary feature-full-bg rounded p-4 bg-light text-center position-relative overflow-hidden border-0">
-                            <span class="h1 icon-color">
-                                <i class="uil uil-award"></i>
-                            </span>
-                            <div class="card-body p-0 content">
-                                <h5>Best Offers</h5>
-                                <p class="para text-muted mb-0">It is a long established fact that a reader.</p>
-                            </div>
-                            <span class="big-icon text-center">
-                                <i class="uil uil-award"></i>
-                            </span>
-                        </div>
-                    </div><!--end col-->
-
-                    <div class="col-lg-3 col-md-4 mt-4 pt-2">
-                        <div class="card features feature-primary feature-full-bg rounded p-4 bg-light text-center position-relative overflow-hidden border-0">
-                            <span class="h1 icon-color">
-                                <i class="uil uil-bookmark"></i>
-                            </span>
-                            <div class="card-body p-0 content">
-                                <h5>Cheap than Other</h5>
-                                <p class="para text-muted mb-0">It is a long established fact that a reader.</p>
-                            </div>
-                            <span class="big-icon text-center">
-                                <i class="uil uil-bookmark"></i>
-                            </span>
-                        </div>
-                    </div><!--end col-->
-
-                    <div class="col-lg-3 col-md-4 mt-4 pt-2">
-                        <div class="card features feature-primary feature-full-bg rounded p-4 bg-light text-center position-relative overflow-hidden border-0">
-                            <span class="h1 icon-color">
-                                <i class="uil uil-favorite"></i>
-                            </span>
-                            <div class="card-body p-0 content">
-                                <h5>Top Rated</h5>
-                                <p class="para text-muted mb-0">It is a long established fact that a reader.</p>
-                            </div>
-                            <span class="big-icon text-center">
-                                <i class="uil uil-favorite"></i>
-                            </span>
-                        </div>
-                    </div><!--end col-->
-
-                    <div class="col-lg-3 col-md-4 mt-4 pt-2">
-                        <div class="card features feature-primary feature-full-bg rounded p-4 bg-light text-center position-relative overflow-hidden border-0">
-                            <span class="h1 icon-color">
-                                <i class="uil uil-clock"></i>
-                            </span>
-                            <div class="card-body p-0 content">
-                                <h5>24/7 Support</h5>
-                                <p class="para text-muted mb-0">It is a long established fact that a reader.</p>
-                            </div>
-                            <span class="big-icon text-center">
-                                <i class="uil uil-clock"></i>
-                            </span>
-                        </div>
-                    </div><!--end col-->
-
-                    <div class="col-lg-3 col-md-4 mt-4 pt-2">
-                        <div class="card features feature-primary feature-full-bg rounded p-4 bg-light text-center position-relative overflow-hidden border-0">
-                            <span class="h1 icon-color">
-                                <i class="uil uil-process"></i>
-                            </span>
-                            <div class="card-body p-0 content">
-                                <h5>Fast Refund</h5>
-                                <p class="para text-muted mb-0">It is a long established fact that a reader.</p>
-                            </div>
-                            <span class="big-icon text-center">
-                                <i class="uil uil-process"></i>
-                            </span>
-                        </div>
-                    </div><!--end col-->
-
-                    <div class="col-lg-12 text-center col-md-4 mt-4 pt-2">
-                        <a href="javascript:void(0)" class="btn btn-primary">See more <i data-feather="arrow-right" class="fea icon-sm"></i></a>
                     </div><!--end col-->
                 </div><!--end row-->
             </div><!--end container-->
+
+            <div class="container mt-100 mt-60">
+                <div class="row align-items-center">
+                    <div class="col-md-6 order-1 order-md-2">
+                        <img src="images/infra/datameshonpando.png" class="img-fluid" alt="">
+                    </div><!--end col-->
+
+                    <div class="col-md-6 order-2 order-md-1">
+                        <div class="section-title ms-lg-5">
+                            <h4 class="title mb-4">Data Mesh<br> On Pando</h4>
+                            <p class="text-muted">You can combine all the Landrick templates into a single one, you can take a component from the Application theme and use it in the Website.</p>
+                            <ul class="list-unstyled text-muted">
+                                <li class="mb-1"><span class="text-primary h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>Digital Marketing Solutions for Tomorrow</li>
+                                <li class="mb-1"><span class="text-primary h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>Our Talented & Experienced Marketing Agency</li>
+                                <li class="mb-1"><span class="text-primary h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>Create your own skin to match your brand</li>
+                            </ul>
+                            <a href="javascript:void(0)" class="mt-3 h6 text-primary">Find Out More <i class="uil uil-angle-right-b"></i></a>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </section><!--end section-->
+
+        <!-- Start -->
+        <section class="section bg-white pt-0">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="video-solution-cta position-relative" style="z-index: 1;">
+                            <div class="position-relative">
+                                <img src="images/infra/evolution.png" class="img-fluid rounded-md shadow-lg" alt="">
+                            </div>
+                            <div class="content mt-md-4 pt-md-2">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-10 text-center">
+                                        <div class="row align-items-center">
+                                            <div class="col-md-6 mt-4 pt-2">
+                                                <div class="section-title text-md-start">
+                                                    <h6 class="text-white-50">Team</h6>
+                                                    <h4 class="title text-white title-dark mb-0">Data Architecture <br> Evolution</h4>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6 col-12 mt-4 pt-md-2">
+                                                <div class="section-title text-md-start">
+                                                    <p class="text-white-50 para-desc">Start working with Landrick that can provide everything you need to generate awareness, drive traffic, connect.</p>
+                                                    <a href="javascript:void(0)" class="text-white title-dark">Read More <i data-feather="arrow-right" class="fea icon-sm"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row -->
+                <div class="feature-posts-placeholder bg-primary bg-gradient"></div>
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- End -->
+
+        <!-- Section Start -->
+        <section class="section pb-0">
+            <!-- Transection Start -->
+            <div class="container mt-100 mt-60">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title mb-5 pb-2">
+                            <h4 class="title mb-4">The fourth-generation Enterprise Data Platform reference architecture.</h4>
+                            <p class="text-muted para-desc mb-0 mx-auto">Start working with <span class="text-primary fw-bold">Pando</span> that can provide everything you need to generate awareness, drive traffic, connect.</p>
+                        </div>
+                        <img src="images/infra/dataplatform.png" alt="" class="position-relative img-fluid mx-auto d-block" style="z-index: 1;">
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+            <!-- Transection End -->
         </section><!--end section-->
         
         <!-- Work Start -->
@@ -327,10 +328,9 @@
                         <div class="filters-group">
                             <ul class="container-filter list-inline mb-0 filter-options text-center">
                                 <li class="list-inline-item categories-name border text-dark rounded active" data-group="all">All</li>
-                                <li class="list-inline-item categories-name border text-dark rounded" data-group="branding">Branding</li>
-                                <li class="list-inline-item categories-name border text-dark rounded" data-group="designing">Designing</li>
-                                <li class="list-inline-item categories-name border text-dark rounded" data-group="photography">Photography</li>
-                                <li class="list-inline-item categories-name border text-dark rounded" data-group="development">Development</li>
+                                <li class="list-inline-item categories-name border text-dark rounded" data-group="Data Layer">Data Layer</li>
+                                <li class="list-inline-item categories-name border text-dark rounded" data-group="Computation Layer">Computation Layer</li>
+                                <li class="list-inline-item categories-name border text-dark rounded" data-group="Domain Layer">Domain Layer</li>
                             </ul>
                         </div>
                     </div><!--end col-->
@@ -339,169 +339,113 @@
 
             <div class="container-fluid">
                 <div id="grid" class="row mt-4">
-                    <div class="col-lg-3 col-md-6 col-12 spacing picture-item" data-groups='["branding"]'>
+                    <div class="col-lg-3 col-md-6 col-12 spacing picture-item" data-groups='["Domain Layer"]'>
                         <div class="card border-0 work-container work-primary work-grid position-relative d-block overflow-hidden rounded">
                             <div class="card-body p-0">
-                                <a href="images/infra/web3storage.png" class="lightbox d-inline-block" title="">
-                                    <img src="images/infra/web3storage.png" class="img-fluid" alt="work-image">
+                                <a href="images/infra/starboard.png" class="lightbox d-inline-block" title="">
+                                    <img src="images/infra/starboard.png" class="img-fluid" alt="work-image">
                                 </a>
                                 <div class="content bg-white p-3">
-                                    <h5 class="mb-0"><a href="portfolio-detail-one.html" class="text-dark title">Iphone mockup</a></h5>
-                                    <h6 class="text-muted tag mb-0">Branding</h6>
+                                    <h5 class="mb-0"><a href="portfolio-detail-one.html" class="text-dark title">Network Analytics & Incentive Design</a></h5>
+                                    <h6 class="text-muted tag mb-0">Domain Layer</h6>
                                 </div>
                             </div>
                         </div>
                     </div><!--end col-->
                     
-                    <div class="col-lg-3 col-md-6 col-12 spacing picture-item" data-groups='["designing"]'>
-                        <div class="card border-0 work-container work-primary work-grid position-relative d-block overflow-hidden rounded">
-                            <div class="card-body p-0">
-                                <a href="images/infra/ipld.png" class="lightbox d-inline-block" title="">
-                                    <img src="images/infra/ipld.png" class="img-fluid" alt="work-image">
-                                </a>
-                                <div class="content bg-white p-3">
-                                    <h5 class="mb-0"><a href="portfolio-detail-one.html" class="text-dark title">Mockup Collection</a></h5>
-                                    <h6 class="text-muted tag mb-0">Mockup</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!--end col-->
-                    
-                    <div class="col-lg-3 col-md-6 col-12 spacing picture-item" data-groups='["photography"]'>
-                        <div class="card border-0 work-container work-primary work-grid position-relative d-block overflow-hidden rounded">
-                            <div class="card-body p-0">
-                                <a href="images/infra/ipfs.png" class="lightbox d-inline-block" title="">
-                                    <img src="images/infra/ipfs.png" class="img-fluid" alt="work-image">
-                                </a>
-                                <div class="content bg-white p-3">
-                                    <h5 class="mb-0"><a href="portfolio-detail-one.html" class="text-dark title">Abstract images</a></h5>
-                                    <h6 class="text-muted tag mb-0">Abstract</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!--end col-->
-                    
-                    <div class="col-lg-3 col-md-6 col-12 spacing picture-item" data-groups='["development"]'>
-                        <div class="card border-0 work-container work-primary work-grid position-relative d-block overflow-hidden rounded">
-                            <div class="card-body p-0">
-                                <a href="images/infra/filecoin.png" class="lightbox d-inline-block" title="">
-                                    <img src="images/infra/filecoin.png" class="img-fluid" alt="work-image">
-                                </a>
-                                <div class="content bg-white p-3">
-                                    <h5 class="mb-0"><a href="portfolio-detail-one.html" class="text-dark title">Yellow bg with Books</a></h5>
-                                    <h6 class="text-muted tag mb-0">Books</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!--end col-->
-                    
-                    <div class="col-lg-3 col-md-6 col-12 spacing picture-item" data-groups='["branding"]'>
-                        <div class="card border-0 work-container work-primary work-grid position-relative d-block overflow-hidden rounded">
-                            <div class="card-body p-0">
-                                <a href="images/infra/pando.png" class="lightbox d-inline-block" title="">
-                                    <img src="images/infra/pando.png" class="img-fluid" alt="work-image">
-                                </a>
-                                <div class="content bg-white p-3">
-                                    <h5 class="mb-0"><a href="portfolio-detail-one.html" class="text-dark title">Company V-card</a></h5>
-                                    <h6 class="text-muted tag mb-0">V-card</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!--end col-->
-                    
-                    <div class="col-lg-3 col-md-6 col-12 spacing picture-item" data-groups='["branding"]'>
-                        <div class="card border-0 work-container work-primary work-grid position-relative d-block overflow-hidden rounded">
-                            <div class="card-body p-0">
-                                <a href="images/infra/abacus.png" class="lightbox d-inline-block" title="">
-                                    <img src="images/infra/abacus.png" class="img-fluid" alt="work-image">
-                                </a>
-                                <div class="content bg-white p-3">
-                                    <h5 class="mb-0"><a href="portfolio-detail-one.html" class="text-dark title">Mockup box with paints</a></h5>
-                                    <h6 class="text-muted tag mb-0">Photography</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!--end col-->
-                    
-                    <div class="col-lg-3 col-md-6 col-12 spacing picture-item" data-groups='["designing"]'>
-                        <div class="card border-0 work-container work-primary work-grid position-relative d-block overflow-hidden rounded">
-                            <div class="card-body p-0">
-                                <a href="images/infra/todo.png" class="lightbox d-inline-block" title="">
-                                    <img src="images/infra/todo.png" class="img-fluid" alt="work-image">
-                                </a>
-                                <div class="content bg-white p-3">
-                                    <h5 class="mb-0"><a href="portfolio-detail-one.html" class="text-dark title">Coffee cup</a></h5>
-                                    <h6 class="text-muted tag mb-0">Cups</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!--end col-->
-                    
-                    <div class="col-lg-3 col-md-6 col-12 spacing picture-item" data-groups='["development"]'>
-                        <div class="card border-0 work-container work-primary work-grid position-relative d-block overflow-hidden rounded">
-                            <div class="card-body p-0">
-                                <a href="images/infra/todo.png" class="lightbox d-inline-block" title="">
-                                    <img src="images/infra/todo.png" class="img-fluid" alt="work-image">
-                                </a>
-                                <div class="content bg-white p-3">
-                                    <h5 class="mb-0"><a href="portfolio-detail-one.html" class="text-dark title">Pen and article</a></h5>
-                                    <h6 class="text-muted tag mb-0">Article</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!--end col-->
-
-                    <div class="col-lg-3 col-md-6 col-12 spacing picture-item" data-groups='["photography"]'>
-                        <div class="card border-0 work-container work-primary work-grid position-relative d-block overflow-hidden rounded">
-                            <div class="card-body p-0">
-                                <a href="images/infra/ipfs.png" class="lightbox d-inline-block" title="">
-                                    <img src="images/infra/ipfs.png" class="img-fluid" alt="work-image">
-                                </a>
-                                <div class="content bg-white p-3">
-                                    <h5 class="mb-0"><a href="portfolio-detail-one.html" class="text-dark title">Abstract images</a></h5>
-                                    <h6 class="text-muted tag mb-0">Abstract</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!--end col-->
-
-                    <div class="col-lg-3 col-md-6 col-12 spacing picture-item" data-groups='["development"]'>
-                        <div class="card border-0 work-container work-primary work-grid position-relative d-block overflow-hidden rounded">
-                            <div class="card-body p-0">
-                                <a href="images/infra/filecoin.png" class="lightbox d-inline-block" title="">
-                                    <img src="images/infra/filecoin.png" class="img-fluid" alt="work-image">
-                                </a>
-                                <div class="content bg-white p-3">
-                                    <h5 class="mb-0"><a href="portfolio-detail-one.html" class="text-dark title">Yellow bg with Books</a></h5>
-                                    <h6 class="text-muted tag mb-0">Books</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!--end col-->
-
-                    <div class="col-lg-3 col-md-6 col-12 spacing picture-item" data-groups='["branding"]'>
-                        <div class="card border-0 work-container work-primary work-grid position-relative d-block overflow-hidden rounded">
-                            <div class="card-body p-0">
-                                <a href="images/infra/pando.png" class="lightbox d-inline-block" title="">
-                                    <img src="images/infra/pando.png" class="img-fluid" alt="work-image">
-                                </a>
-                                <div class="content bg-white p-3">
-                                    <h5 class="mb-0"><a href="portfolio-detail-one.html" class="text-dark title">Company V-card</a></h5>
-                                    <h6 class="text-muted tag mb-0">V-card</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!--end col-->
-
-                    <div class="col-lg-3 col-md-6 col-12 spacing picture-item" data-groups='["development"]'>
+                    <div class="col-lg-3 col-md-6 col-12 spacing picture-item" data-groups='["Computation Layer"]'>
                         <div class="card border-0 work-container work-primary work-grid position-relative d-block overflow-hidden rounded">
                             <div class="card-body p-0">
                                 <a href="images/infra/cod.png" class="lightbox d-inline-block" title="">
                                     <img src="images/infra/cod.png" class="img-fluid" alt="work-image">
                                 </a>
                                 <div class="content bg-white p-3">
-                                    <h5 class="mb-0"><a href="portfolio-detail-one.html" class="text-dark title">Pen and article</a></h5>
-                                    <h6 class="text-muted tag mb-0">Article</h6>
+                                    <h5 class="mb-0"><a href="https://pando.network" class="text-dark title">Computation over Data</a></h5>
+                                    <h6 class="text-muted tag mb-0">Computation Layer</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-3 col-md-6 col-12 spacing picture-item" data-groups='["Computation Layer"]'>
+                        <div class="card border-0 work-container work-primary work-grid position-relative d-block overflow-hidden rounded">
+                            <div class="card-body p-0">
+                                <a href="images/infra/abacus.png" class="lightbox d-inline-block" title="">
+                                    <img src="images/infra/abacus.png" class="img-fluid" alt="work-image">
+                                </a>
+                                <div class="content bg-white p-3">
+                                    <h5 class="mb-0"><a href="portfolio-detail-one.html" class="text-dark title">Self-service Cube Computation over Pando Datasets</a></h5>
+                                    <h6 class="text-muted tag mb-0">Computation Layer</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-3 col-md-6 col-12 spacing picture-item" data-groups='["Domain Layer"]'>
+                        <div class="card border-0 work-container work-primary work-grid position-relative d-block overflow-hidden rounded">
+                            <div class="card-body p-0">
+                                <a href="images/infra/blockscience.png" class="lightbox d-inline-block" title="">
+                                    <img src="images/infra/blockscience.png" class="img-fluid" alt="work-image">
+                                </a>
+                                <div class="content bg-white p-3">
+                                    <h5 class="mb-0"><a href="portfolio-detail-one.html" class="text-dark title">Economic Systems Engineering</a></h5>
+                                    <h6 class="text-muted tag mb-0">Domain Layer</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-3 col-md-6 col-12 spacing picture-item" data-groups='["Data Layer"]'>
+                        <div class="card border-0 work-container work-primary work-grid position-relative d-block overflow-hidden rounded">
+                            <div class="card-body p-0">
+                                <a href="images/infra/ipld.png" class="lightbox d-inline-block" title="">
+                                    <img src="images/infra/ipld.png" class="img-fluid" alt="work-image">
+                                </a>
+                                <div class="content bg-white p-3">
+                                    <h5 class="mb-0"><a href="portfolio-detail-one.html" class="text-dark title">data model of the content-addressable web</a></h5>
+                                    <h6 class="text-muted tag mb-0">Data Layer</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-3 col-md-6 col-12 spacing picture-item" data-groups='["Data Layer"]'>
+                        <div class="card border-0 work-container work-primary work-grid position-relative d-block overflow-hidden rounded">
+                            <div class="card-body p-0">
+                                <a href="images/infra/ipfs.png" class="lightbox d-inline-block" title="">
+                                    <img src="images/infra/ipfs.png" class="img-fluid" alt="work-image">
+                                </a>
+                                <div class="content bg-white p-3">
+                                    <h5 class="mb-0"><a href="portfolio-detail-one.html" class="text-dark title">A peer-to-peer hypermedia protocol</a></h5>
+                                    <h6 class="text-muted tag mb-0">Data Layer</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-3 col-md-6 col-12 spacing picture-item" data-groups='["Data Layer"]'>
+                        <div class="card border-0 work-container work-primary work-grid position-relative d-block overflow-hidden rounded">
+                            <div class="card-body p-0">
+                                <a href="images/infra/filecoin.png" class="lightbox d-inline-block" title="">
+                                    <img src="images/infra/filecoin.png" class="img-fluid" alt="work-image">
+                                </a>
+                                <div class="content bg-white p-3">
+                                    <h5 class="mb-0"><a href="portfolio-detail-one.html" class="text-dark title">decentralized storage network</a></h5>
+                                    <h6 class="text-muted tag mb-0">Data Layer</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-3 col-md-6 col-12 spacing picture-item" data-groups='["Data Layer"]'>
+                        <div class="card border-0 work-container work-primary work-grid position-relative d-block overflow-hidden rounded">
+                            <div class="card-body p-0">
+                                <a href="images/infra/pando.png" class="lightbox d-inline-block" title="">
+                                    <img src="images/infra/pando.png" class="img-fluid" alt="work-image">
+                                </a>
+                                <div class="content bg-white p-3">
+                                    <h5 class="mb-0"><a href="portfolio-detail-one.html" class="text-dark title">Web3 Data Network</a></h5>
+                                    <h6 class="text-muted tag mb-0">Data Layer</h6>
                                 </div>
                             </div>
                         </div>
@@ -511,156 +455,193 @@
         </section><!--end section-->
         <!-- Work End -->
 
-        <section class="section bg-light">
+        <!-- Section Start -->
+        <section class="section pb-0">
+            <!-- Transection Start -->
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12 text-center">
-                        <div class="section-title">
-                            <h4 class="title fw-bold mb-4">Workshop. <br> content</h4>
+                        <div class="section-title mb-5 pb-2">
+                            <h4 class="title mb-4">Filecoin system Overview.</h4>
+                            <p class="text-muted para-desc mb-0 mx-auto">Start working with <span class="text-primary fw-bold">Saturn</span> that can provide everything you need to generate awareness, drive traffic, connect.</p>
+                        </div>
+                        <img src="images/infra/saturn.jpg" alt="" class="position-relative img-fluid mx-auto d-block" style="z-index: 1;">
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+            <!-- Transection End -->
+        </section><!--end section-->
+
+        <!-- Start -->
+        <section class="section">
+            <!-- Popular Course Start -->
+            <div class="container mt-100 mt-60">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <div class="section-title text-center mb-4 pb-2">
+                            <h4 class="title mb-4">Principle of Web3 Data Infra</h4>
                             <p class="text-muted para-desc mb-0 mx-auto">Start working with <span class="text-primary fw-bold">Landrick</span> that can provide everything you need to generate awareness, drive traffic, connect.</p>
                         </div>
                     </div><!--end col-->
                 </div><!--end row-->
-            </div><!--end container-->
 
-            <div class="container mt-100 mt-60">
-                <div class="row align-items-center">
-                    <div class="col-lg-5 col-md-6">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
                         <div class="card blog blog-primary rounded border-0 shadow overflow-hidden">
                             <div class="position-relative">
-                                <img src="images/travel/1.jpg" class="card-img-top" alt="...">
-                                <div class="overlay rounded-top"></div>
+                                <img src="images/infra/principle1.png" class="card-img-top" alt="...">
+                                <div class="overlay bg-dark"></div>
+                            </div>
+                            <div class="position-relative">
+                                <div class="shape overflow-hidden text-white">
+                                    <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+                                    </svg>
+                                </div>
                             </div>
                             <div class="card-body content">
-                                <h5><a href="javascript:void(0)" class="card-title title text-dark">Conversations, Feedback, Recognition</a></h5>
-                                <div class="post-meta d-flex justify-content-between mt-3">
-                                    <ul class="list-unstyled mb-0">
-                                        <li class="list-inline-item me-2 mb-0"><a href="javascript:void(0)" class="text-muted like"><i class="uil uil-heart me-1"></i>33</a></li>
-                                        <li class="list-inline-item"><a href="javascript:void(0)" class="text-muted comments"><i class="uil uil-comment me-1"></i>08</a></li>
-                                    </ul>
-                                    <a href="blog-detail.html" class="text-muted readmore">Read More <i class="uil uil-angle-right-b align-middle"></i></a>
-                                </div>
+                                <a href="course-detail.html" class="title text-dark h5">Evolution of Blockchain Components to Off-Chain Models</a>
+                                <p class="text-muted mt-2">We’ll be exploring how components such as record keeping (storage) and smart contracts (computation) can be moved off-chain to enable more robust computations and storage requirements without sacrificing security and scalability requirements..</p>
+                                <a href="https://medium.com/@miguelmota/evolution-of-blockchain-components-to-off-chain-models-ca3649fe2c83" class="text-primary">Read More <i class="uil uil-angle-right-b align-middle"></i></a>
                             </div>
-                            <div class="author">
-                                <small class="text-light user d-block"><i class="uil uil-user"></i> Calvin Carlo</small>
-                                <small class="text-light date"><i class="uil uil-calendar-alt"></i> 25th June 2021</small>
-                            </div>
-                        </div>
+                        </div> <!--end card / course-blog-->
                     </div><!--end col-->
 
-                    <div class="col-lg-7 col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                        <div class="section-title ms-lg-4">
-                            <h4 class="title mb-4">Experience Luxury & <br> Find Your Base</h4>
-                            <p class="text-muted">You can combine all the Landrick templates into a single one, you can take a component from the Application theme and use it in the Website.</p>
-                            <ul class="list-unstyled text-muted">
-                                <li class="mb-1"><span class="text-primary h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>Digital Marketing Solutions for Tomorrow</li>
-                                <li class="mb-1"><span class="text-primary h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>Our Talented & Experienced Marketing Agency</li>
-                                <li class="mb-1"><span class="text-primary h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>Create your own skin to match your brand</li>
-                            </ul>
-                            <a href="javascript:void(0)" class="mt-3 h6 text-primary">Search Destination <i class="uil uil-angle-right-b"></i></a>
-                        </div>
+                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                        <div class="card blog blog-primary rounded border-0 shadow overflow-hidden">
+                            <div class="position-relative">
+                                <img src="images/infra/principle6.png" class="card-img-top" alt="...">
+                                <div class="overlay bg-dark"></div>
+                            </div>
+                            <div class="position-relative">
+                                <div class="shape overflow-hidden text-white">
+                                    <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="card-body content">
+                                <a href="course-detail.html" class="title text-dark h5">Lakehouse:A New Generation of Open Platforms that Unify Data Warehousing and Advanced Analytics</a>
+                                <p class="text-muted mt-2">Lakehouses can help address several major challenges with data warehouses, including data staleness, reliability, total cost of ownership, data lock-in, and limited use-case support.</p>
+                                <a href="https://www.cidrdb.org/cidr2021/papers/cidr2021_paper17.pdf" class="text-primary">Read More <i class="uil uil-angle-right-b align-middle"></i></a>
+                            </div>
+                        </div> <!--end card / course-blog-->
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                        <div class="card blog blog-primary rounded border-0 shadow overflow-hidden">
+                            <div class="position-relative">
+                                <img src="images/infra/principle5.png" class="card-img-top" alt="...">
+                                <div class="overlay bg-dark"></div>
+                            </div>
+                            <div class="position-relative">
+                                <div class="shape overflow-hidden text-white">
+                                    <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="card-body content">
+                                <a href="course-detail.html" class="title text-dark h5">Data Mesh Principles and Logical Architecture</a>
+                                <p class="text-muted mt-2">Data mesh is a new paradigm for building the next-generation data platform, and founded in four principles: domain-oriented decentralized data ownership and architecture, data as a product, self-serve data infrastructure as a platform, and federated computational governance.</p>
+                                <a href="https://martinfowler.com/articles/data-mesh-principles.html" class="text-primary">Read More <i class="uil uil-angle-right-b align-middle"></i></a>
+                            </div>
+                        </div> <!--end card / course-blog-->
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                        <div class="card blog blog-primary rounded border-0 shadow overflow-hidden">
+                            <div class="position-relative">
+                                <img src="images/infra/principle2.png" class="card-img-top" alt="...">
+                                <div class="overlay bg-dark"></div>
+                            </div>
+                            <div class="position-relative">
+                                <div class="shape overflow-hidden text-white">
+                                    <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="card-body content">
+                                <a href="course-detail.html" class="title text-dark h5">Emerging Architectures for Modern Data Infrastructure</a>
+                                <p class="text-muted mt-2">To help data teams stay on top of the changes happening in the industry, we’re publishing in this post an updated set of data infrastructure architectures. They show the current best-in-class stack across both analytic and operational systems, as gathered from numerous operators we spoke with over the last year. Each architectural blueprint includes a summary of what’s changed since the prior version.</p>
+                                <a href="https://future.com/emerging-architectures-modern-data-infrastructure/" class="text-primary">Read More <i class="uil uil-angle-right-b align-middle"></i></a>
+                            </div>
+                        </div> <!--end card / course-blog-->
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                        <div class="card blog blog-primary rounded border-0 shadow overflow-hidden">
+                            <div class="position-relative">
+                                <img src="images/infra/principle4.png" class="card-img-top" alt="...">
+                                <div class="overlay bg-dark"></div>
+                            </div>
+                            <div class="position-relative">
+                                <div class="shape overflow-hidden text-white">
+                                    <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="card-body content">
+                                <a href="course-detail.html" class="title text-dark h5">The Composable Web3 Data Network</a>
+                                <p class="text-muted mt-2">Financial composability is not the only form of composability. There’s an even larger opportunity for composability: data composability. All ledgers—asset ledgers must achieve Composability — As more data, state, and functions are added to a decentralized ledger, they increase the breadth and depth of the substrate on top of which new applications can be built. Composability is the ultimate network effect.</p>
+                                <a href="https://multicoin.capital/2022/02/16/the-composable-web3-data-network/" class="text-primary">Read More <i class="uil uil-angle-right-b align-middle"></i></a>
+                            </div>
+                        </div> <!--end card / course-blog-->
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                        <div class="card blog blog-primary rounded border-0 shadow overflow-hidden">
+                            <div class="position-relative">
+                                <img src="images/infra/principle3.png" class="card-img-top" alt="...">
+                                <div class="overlay bg-dark"></div>
+                                <div class="overlay bg-dark"></div>
+                            </div>
+                            <div class="position-relative">
+                                <div class="shape overflow-hidden text-white">
+                                    <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="card-body content">
+                                <a href="course-detail.html" class="title text-dark h5">SQL is the kinggit </a>
+                                <p class="text-muted mt-2">We believe that SQL has become the universal interface for data analysis.Like networking we have a complex stack, with infrastructure on the bottom and applications on top.What we need is an interface that allows pieces of this stack to communicate with one another. Ideally something already standardized in the industry. Something that would allow us to swap in/out various layers with minimal friction.That is the power of SQL. Like IP, SQL is a universal interface.</p>
+                                <a href="course-detail.html" class="text-primary">Read More <i class="uil uil-angle-right-b align-middle"></i></a>
+                            </div>
+                        </div> <!--end card / course-blog-->
                     </div><!--end col-->
                 </div><!--end row-->
             </div><!--end container-->
+            <!-- Popular Course End -->
+        </section><!--end section-->
+        <!-- End -->
 
-            <div class="container mt-100 mt-60">
-                <div class="row align-items-center">
-                    <div class="col-lg-5 col-md-6 order-1 order-md-2">
-                        <img src="images/travel/3.jpg" class="img-fluid rounded shadow-md" alt="">
-                    </div><!--end col-->
-
-                    <div class="col-lg-7 col-md-6 order-2 order-md-1 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                        <div class="section-title me-lg-5">
-                            <h4 class="title mb-4">100% Money back <br> Guarantee if You Cancel</h4>
-                            <p class="text-muted">You can combine all the Landrick templates into a single one, you can take a component from the Application theme and use it in the Website.</p>
-                        </div>
-
-                        <div class="accordion mt-4 pt-2" id="accordionExample">
-                            <div class="accordion-item rounded shadow">
-                                <h2 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button border-0 bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                                            aria-expanded="true" aria-controls="collapseOne">
-                                        How does it work ?
-                                    </button>
-                                </h2>
-                                <div id="collapseOne" class="accordion-collapse border-0 collapse show" aria-labelledby="headingOne"
-                                     data-bs-parent="#accordionExample">
-                                    <div class="accordion-body text-muted bg-white">
-                                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="accordion-item rounded shadow mt-2">
-                                <h2 class="accordion-header" id="headingTwo">
-                                    <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                            aria-expanded="false" aria-controls="collapseTwo">
-                                        Do I need a designer to use Landrick ?
-                                    </button>
-                                </h2>
-                                <div id="collapseTwo" class="accordion-collapse border-0 collapse" aria-labelledby="headingTwo"
-                                     data-bs-parent="#accordionExample">
-                                    <div class="accordion-body text-muted bg-white">
-                                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="accordion-item rounded shadow mt-2">
-                                <h2 class="accordion-header" id="headingThree">
-                                    <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        What do I need to do to start selling ?
-                                    </button>
-                                </h2>
-                                <div id="collapseThree" class="accordion-collapse border-0 collapse" aria-labelledby="headingThree"
-                                     data-bs-parent="#accordionExample">
-                                    <div class="accordion-body text-muted bg-white">
-                                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="accordion-item rounded shadow mt-2">
-                                <h2 class="accordion-header" id="headingFour">
-                                    <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                        What happens when I receive an order ?
-                                    </button>
-                                </h2>
-                                <div id="collapseFour" class="accordion-collapse border-0 collapse" aria-labelledby="headingFour"
-                                     data-bs-parent="#accordionExample">
-                                    <div class="accordion-body text-muted bg-white">
-                                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!--end col-->
-                </div><!--end row-->
-            </div><!--end container-->
-
-            <div class="container mt-100 mt-60">
-                <div class="row align-items-center">
+        <!-- Subscribe Start -->
+        <section class="section bg-primary bg-gradient mt-md-5">
+            <div class="container position-relative">
+                <div class="row">
                     <div class="col-lg-5 col-md-6">
-                        <img src="images/travel/2.jpg" class="img-fluid rounded shadow-md" alt="">
+                        <div class="app-subscribe text-center text-md-start">
+                            <img src="images/infra/rm-lisbon.png" class="img-fluid rounded-md shadow-md" alt="">
+                        </div>
                     </div><!--end col-->
 
-                    <div class="col-lg-7 col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                        <div class="section-title ms-lg-4">
-                            <h4 class="title mb-4">We have More than 500 <br> Selected Destination</h4>
-                            <p class="text-muted">You can combine all the Landrick templates into a single one, you can take a component from the Application theme and use it in the Website.</p>
-                            <ul class="list-unstyled text-muted">
-                                <li class="mb-1"><span class="text-primary h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>Digital Marketing Solutions for Tomorrow</li>
-                                <li class="mb-1"><span class="text-primary h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>Our Talented & Experienced Marketing Agency</li>
-                                <li class="mb-1"><span class="text-primary h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>Create your own skin to match your brand</li>
-                            </ul>
-                            <a href="javascript:void(0)" class="mt-3 h6 text-primary">Search Destination <i class="uil uil-angle-right-b"></i></a>
+                    <div class="col-lg-7 col-md-6 mt-4 pt-2 mt-sm-0 pt-sm-0">
+                        <div class="section-title text-center text-md-start">
+                            <h1 class="fw-bold text-white title-dark mb-3">Upcoming Events</h1>
+                            <p class="text-white-50 para-dark">Retrieval Markets Summit, Lisbon.A day of presentations from Retrieval Markets builders</p>
+
+                            <div class="mt-4 pt-2">
+                                <a href="https://lu.ma/psfu9qms" target="_blank" class="btn btn-warning">Pre-order Now</a>
+                            </div>
                         </div>
                     </div><!--end col-->
                 </div><!--end row-->
             </div><!--end container-->
         </section><!--end section-->
+        <!-- Subscribe End -->
 
         <!-- Footer Start -->
         <footer class="footer" style="background-image: url('images/svg-map.svg'); background-repeat: no-repeat; background-position: center;">
